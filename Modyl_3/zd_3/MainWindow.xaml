@@ -4,13 +4,10 @@
         Title="Task Management" Height="300" Width="400">
     <Grid>
         <StackPanel Margin="10">
-            <!-- Поле для ввода задачи с текстом-подсказкой -->
             <TextBox x:Name="TaskDescription" Width="300" Margin="5"
                      GotFocus="RemoveText" LostFocus="AddText">
                 Введите описание задачи
             </TextBox>
-
-            <!-- Выбор делегата для задачи -->
             <ComboBox x:Name="DelegateSelector" Width="300" Margin="5">
                 <ComboBoxItem Content="Отправить уведомление"/>
                 <ComboBoxItem Content="Записать в лог"/>
