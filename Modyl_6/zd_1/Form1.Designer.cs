@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(zd_1));
             dateTimePicker1 = new DateTimePicker();
             FirstNametxt = new TextBox();
             DepartmentTxt = new TextBox();
@@ -46,6 +47,7 @@
             label6 = new Label();
             button1 = new Button();
             dataGridView1 = new DataGridView();
+            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -148,7 +150,7 @@
             // 
             // DeleteButton
             // 
-            DeleteButton.Location = new Point(433, 14);
+            DeleteButton.Location = new Point(517, 14);
             DeleteButton.Name = "DeleteButton";
             DeleteButton.Size = new Size(119, 23);
             DeleteButton.TabIndex = 12;
@@ -158,7 +160,7 @@
             // 
             // EditButton
             // 
-            EditButton.Location = new Point(558, 14);
+            EditButton.Location = new Point(726, 12);
             EditButton.Name = "EditButton";
             EditButton.Size = new Size(119, 23);
             EditButton.TabIndex = 13;
@@ -168,7 +170,7 @@
             // 
             // txtEmployeeID
             // 
-            txtEmployeeID.Location = new Point(148, 182);
+            txtEmployeeID.Location = new Point(300, 482);
             txtEmployeeID.Name = "txtEmployeeID";
             txtEmployeeID.Size = new Size(104, 23);
             txtEmployeeID.TabIndex = 15;
@@ -176,7 +178,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(150, 164);
+            label6.Location = new Point(300, 464);
             label6.Name = "label6";
             label6.Size = new Size(84, 15);
             label6.TabIndex = 16;
@@ -184,7 +186,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(683, 14);
+            button1.Location = new Point(904, 14);
             button1.Name = "button1";
             button1.Size = new Size(119, 23);
             button1.TabIndex = 17;
@@ -197,14 +199,16 @@
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(300, 43);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(502, 297);
+            dataGridView1.Size = new Size(730, 403);
             dataGridView1.TabIndex = 18;
             // 
             // zd_1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(811, 353);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(1035, 517);
             Controls.Add(dataGridView1);
             Controls.Add(button1);
             Controls.Add(label6);
@@ -223,6 +227,7 @@
             Controls.Add(DepartmentTxt);
             Controls.Add(FirstNametxt);
             Controls.Add(dateTimePicker1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "zd_1";
             Text = "Human Resources Department";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
@@ -250,5 +255,6 @@
         private Label label6;
         private Button button1;
         private DataGridView dataGridView1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
